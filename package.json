@@ -1,6 +1,28 @@
 {
   "name": "microbe-tasks",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT"
+  "description": "Microbe Tasks",
+  "repository": "cbdowell/microbe-tasks",
+  "bugs": "https://github.com/cbdowell/microbe-tasks/issues",
+  "homepage": "https://github.com/cbdowell/microbe-tasks",
+  "license": "MIT",
+  "scripts": {
+    "push-changes": "node ./scripts/push-changes.js",
+    "build": "taskr",
+    "release": "taskr release",
+    "pretestonly": "taskr pretest",
+    "posttestonly": "taskr posttest"
+  },
+  "devDependencies": {
+    "@taskr/babel": "^1.1.0",
+    "@taskr/clear": "^1.1.0",
+    "@taskr/esnext": "^1.1.0",
+    "@taskr/watch": "^1.1.0",
+    "chromedriver": "^2.34.0",
+    "node-notifier": "^5.1.2",
+    "taskr": "^1.1.0",
+    "dotenv": "^4.0.0",
+    "shelljs": "^0.7.8",
+    "husky": "^0.14.3"
+  }
 }
